@@ -2,9 +2,9 @@ import { HighchartsService } from './HighchartsService';
 import { deepAssign } from './deepAssign';
 
 export function initChart(highchartsService : HighchartsService, userOpts, baseOpts, type : string) {
-    if (!highchartsService.Highcharts[type]) {
-        throw new Error(`${type} is unknown chart type.`);
-    }
+    // if (!highchartsService.Highcharts[type]) {
+    //     throw new Error(`${type} is unknown chart type.`);
+    // }
 
     // Adjust axis type to user one (#56)
     if (Array.isArray(userOpts.xAxis) ) {
