@@ -10,6 +10,7 @@ var ChartXAxisComponent_1 = require('./ChartXAxisComponent');
 exports.ChartXAxisComponent = ChartXAxisComponent_1.ChartXAxisComponent;
 var ChartYAxisComponent_1 = require('./ChartYAxisComponent');
 exports.ChartYAxisComponent = ChartYAxisComponent_1.ChartYAxisComponent;
+var HighchartsService_1 = require('./HighchartsService');
 var CHART_DIRECTIVES = [
     ChartComponent_1.ChartComponent,
     ChartSeriesComponent_1.ChartSeriesComponent,
@@ -22,6 +23,7 @@ var ChartModule = (function () {
     }
     ChartModule.decorators = [
         { type: core_1.NgModule, args: [{
+                    providers: [HighchartsService_1.HighchartsService],
                     declarations: [CHART_DIRECTIVES],
                     exports: [CHART_DIRECTIVES]
                 },] },
