@@ -1,9 +1,6 @@
 "use strict";
 var deepAssign_1 = require('./deepAssign');
 function initChart(highchartsService, userOpts, baseOpts, type) {
-    if (!highchartsService.Highcharts[type]) {
-        throw new Error(type + " is unknown chart type.");
-    }
     if (Array.isArray(userOpts.xAxis)) {
         baseOpts.xAxis = [baseOpts.xAxis];
     }
